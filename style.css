@@ -44,7 +44,7 @@
   @media (max-width:720px){ section{padding:60px 0;} }
 
   a:focus-visible, button:focus-visible{outline:3px solid var(--orange); outline-offset:3px; border-radius:4px;}
-
+brand
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:10px;
     padding:16px 28px; border-radius:999px; font-weight:600; font-size:16px;
@@ -65,8 +65,19 @@
     border-bottom:1px solid var(--line);
   }
   .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:16px;}
-  .brand{ display:flex; align-items:center; gap:10px; font-family:'Sora'; font-weight:700; font-size:19px;}
-  .brand img{ width:38px; height:38px; border-radius:10px; object-fit:cover;}
+  .brand{ 
+    /* background-color: var(--orange);
+    color: white;
+    padding: 5px;
+    border-radius: 10px; */
+    display:flex; 
+    align-items:center; 
+    gap:10px; 
+    font-family:'Sora'; 
+    font-weight:700; 
+    font-size:19px;
+  }
+  .brand img{ width:38px; height:38px; border-radius:9px; object-fit:cover;}
   .nav-links{ display:flex; align-items:center; gap:30px; font-size:15px; font-weight:500;}
   .nav-links a{ color:var(--ink-soft); transition:color .15s ease; }
   .nav-links a:hover{ color:var(--orange);}

@@ -44,7 +44,7 @@
   @media (max-width:720px){ section{padding:60px 0;} }
 
   a:focus-visible, button:focus-visible{outline:3px solid var(--orange); outline-offset:3px; border-radius:4px;}
-brand
+
   .btn{
     display:inline-flex; align-items:center; justify-content:center; gap:10px;
     padding:16px 28px; border-radius:999px; font-weight:600; font-size:16px;
@@ -65,19 +65,8 @@ brand
     border-bottom:1px solid var(--line);
   }
   .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; gap:16px;}
-  .brand{ 
-    /* background-color: var(--orange);
-    color: white;
-    padding: 5px;
-    border-radius: 10px; */
-    display:flex; 
-    align-items:center; 
-    gap:10px; 
-    font-family:'Sora'; 
-    font-weight:700; 
-    font-size:19px;
-  }
-  .brand img{ width:38px; height:38px; border-radius:9px; object-fit:cover;}
+  .brand{ display:flex; align-items:center; gap:10px; font-family:'Sora'; font-weight:700; font-size:19px; background-color: var(--orange); color: white; border-radius: 10px; padding: 5px 10px; box-shadow: 2px 2px 10px rgb(192, 192, 192);}
+  .brand img{ width:38px; height:38px; border-radius:4px; object-fit:cover;}
   .nav-links{ display:flex; align-items:center; gap:30px; font-size:15px; font-weight:500;}
   .nav-links a{ color:var(--ink-soft); transition:color .15s ease; }
   .nav-links a:hover{ color:var(--orange);}
@@ -267,3 +256,120 @@ brand
   .hero-anim > *:nth-child(4){animation-delay:.35s;}
   .hero-anim > *:nth-child(5){animation-delay:.45s;}
   @keyframes heroIn{ to{ opacity:1; transform:translateY(0);} }
+
+  .nav-btn.btn-ghost{ padding:12px 20px; font-size:14.5px; }
+  .nav-btn.btn-primary{ padding:12px 22px; font-size:14.5px; }
+  .cta-outer{ padding:70px 0; }
+
+  /* ============================================================
+     MOBILE REFINEMENT — scoped entirely inside max-width queries.
+     Desktop and tablet layout/rules above are untouched.
+     ============================================================ */
+  @media (max-width: 640px){
+    html, body{ overflow-x:hidden; }
+    .wrap{ padding:0 20px; }
+    section{ padding:52px 0; }
+
+    /* Header */
+    .brand{ font-size:16.5px; gap:8px; }
+    .brand img{ width:34px; height:34px; }
+    .nav{ padding:12px 0; }
+    .nav-btn.btn-primary{ padding:10px 16px; font-size:13.5px; }
+    .nav-btn.btn-primary svg{ width:17px; height:17px; }
+
+    /* Hero */
+    .hero{ padding:26px 0 40px; }
+    .eyebrow-pill{ font-size:12.5px; padding:7px 14px; margin-bottom:16px; }
+    .hero h1{ font-size:28px; max-width:16ch; margin-bottom:.5em; }
+    .hero .sub{ font-size:15.5px; max-width:none; margin-bottom:22px; }
+    .hero-ctas{ flex-direction:column; align-items:stretch; gap:12px; margin-bottom:22px; }
+    .hero-ctas .btn{ width:100%; padding:15px 20px; }
+    .hero-meta{ gap:10px 16px; font-size:13px; }
+    .hero-media img{ height:200px; }
+    .hero-tag{ left:12px; bottom:12px; padding:9px 13px; font-size:12.5px; gap:8px; }
+    .hero-tag svg{ width:16px; height:16px; }
+
+    /* Trust bar */
+    .trust{ padding:20px 0; }
+    .trust .wrap{ gap:12px 18px; }
+    .trust-item{ font-size:13px; gap:7px; }
+    .trust-item svg{ width:18px; height:18px; }
+
+    /* Section headings */
+    .section-head{ margin-bottom:26px; }
+    .section-head h2{ font-size:23px; }
+    .section-head p{ font-size:14.5px; }
+
+    /* Services */
+    .services-grid{ gap:14px; }
+    .service-card{ padding:22px 20px; }
+    .service-icon{ width:44px; height:44px; margin-bottom:14px; }
+    .service-icon svg{ width:22px; height:22px; }
+    .service-card h3{ font-size:17px; }
+    .service-card p{ font-size:14px; }
+
+    /* Specialties */
+    .spec-tags{ gap:8px; }
+    .spec-tags li{ padding:8px 13px; font-size:13.5px; }
+    .specialties-foot{ flex-direction:column; align-items:stretch; gap:12px; }
+    .specialties-foot .btn{ width:100%; }
+
+    /* Split sections (ultrassom / sobre) */
+    .split{ gap:22px; }
+    .split img{ height:210px; }
+    .us-tags{ gap:8px; }
+    .us-tags li{ padding:7px 12px; font-size:13px; }
+    .about-highlights{ margin-top:18px; gap:10px; }
+    .about-highlights li{ font-size:13.5px; padding:11px 12px; }
+
+    /* Process */
+    .steps{ gap:14px; }
+    .step{ padding:22px 20px; }
+    .step .num{ font-size:28px; margin-bottom:10px; }
+    .step h3{ font-size:16.5px; }
+    .step p{ font-size:14px; }
+    .process-cta .btn{ width:100%; }
+
+    /* Location */
+    .loc-grid{ gap:20px; }
+    .loc-card{ padding:22px; }
+    .loc-info li{ font-size:14px; margin-bottom:14px; }
+    .loc-btns{ flex-direction:column; align-items:stretch; }
+    .loc-btns .btn{ width:100%; }
+    .map-frame{ min-height:230px; }
+    .map-frame iframe{ min-height:230px; }
+
+    /* Gallery */
+    .gallery-grid{ grid-template-columns:1fr 1fr; grid-template-rows:140px 140px; gap:10px; }
+
+    /* FAQ */
+    .faq-q{ padding:16px 18px; font-size:14.5px; gap:12px; }
+    .faq-a p{ padding:0 18px 18px; font-size:14px; }
+
+    /* Final CTA */
+    .cta-outer{ padding:44px 0; }
+    .final-cta{ margin:0 16px; padding:38px 20px; border-radius:20px; }
+    .final-cta h2{ font-size:22px; }
+    .final-cta p{ font-size:14.5px; margin-bottom:22px; }
+    .final-cta .btn{ width:100%; }
+
+    /* Footer */
+    footer{ padding:44px 0 20px; }
+    .foot-grid{ gap:26px; margin-bottom:26px; }
+
+    /* Floating WhatsApp — comfortable, clear of edges, safe-area aware */
+    .float-wa{
+      width:52px; height:52px;
+      right:14px;
+      bottom:calc(14px + env(safe-area-inset-bottom, 0px));
+    }
+    .float-wa svg{ width:26px; height:26px; }
+  }
+
+  @media (max-width: 360px){
+    .wrap{ padding:0 16px; }
+    .hero h1{ font-size:25px; }
+    .hero .sub{ font-size:14.5px; }
+    .brand span{ display:none; }
+    .final-cta{ margin:0 12px; padding:32px 16px; }
+  }

@@ -76,7 +76,7 @@
   @media (max-width:880px){
     .nav-links{ position:fixed; inset:64px 0 0 0; background:#fff; flex-direction:column; justify-content:flex-start;
       padding:32px 24px; gap:22px; font-size:18px; transform:translateX(100%); transition:transform .3s ease; overflow:auto;}
-    .nav-links.open{ transform:translateX(0);}
+    .nav-lin{ transform:translateX(0);}
     .menu-btn{ display:block;}
     .nav-cta .btn-ghost{ display:none;}
   }
@@ -211,7 +211,7 @@
     font-family:'Sora'; font-weight:600; font-size:16px; color:var(--ink);
   }
   .faq-q svg{ width:20px; height:20px; color:var(--orange); flex:none; transition:transform .25s ease;}
-  .faq-item.open .faq-q svg{ transform:rotate(45deg);}
+  .faq-it .faq-q svg{ transform:rotate(45deg);}
   .faq-a{ max-height:0; overflow:hidden; transition:max-height .3s ease;}
   .faq-a p{ padding:0 24px 22px; margin:0; font-size:15px;}
 
@@ -367,7 +367,7 @@
   }
 
   @media (max-width: 360px){
-    .wrap{ padding:0 16px; }
+    .wrap{ padding:8px 16px; }
     .hero h1{ font-size:25px; }
     .hero .sub{ font-size:14.5px; }
     .brand span{ display:none; }

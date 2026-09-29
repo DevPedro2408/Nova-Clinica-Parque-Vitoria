@@ -19,6 +19,7 @@
     html{scroll-behavior:auto;}
     *{animation-duration:.01ms !important; animation-iteration-count:1 !important; transition-duration:.01ms !important;}
   }
+
   body{
     margin:0;
     font-family:'Inter',system-ui,sans-serif;
@@ -366,10 +367,13 @@
     .float-wa svg{ width:26px; height:26px; }
   }
 
+  @media (max-width: 450px) {
+    .brand span{ display:none; }
+  }
+
   @media (max-width: 360px){
     .wrap{ padding:8px 16px; }
     .hero h1{ font-size:25px; }
     .hero .sub{ font-size:14.5px; }
-    .brand span{ display:none; }
     .final-cta{ margin:0 12px; padding:32px 16px; }
   }

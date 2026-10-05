@@ -3,7 +3,7 @@ const menuBtn = document.getElementById('menuBtn');
   menuBtn.addEventListener('click', () => {
     const open = navLinks.classList.toggle('open');
     menuBtn.setAttribute('aria-expanded', open);
-    navLinks.style.transform = 'none'
+    
   });
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => {
     navLinks.classList.remove('open');
